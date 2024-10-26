@@ -10,7 +10,7 @@ import userRoutes from './routes/UserRoutes.js';
 dotenv.config({ path: '../.env' });
 app.use(cors());
 app.use(express.json());
-
+app.use(express.static("uploads"));
 
 const port = process.env.port || 8050 ;
 const uri=process.env.MONGO_URL;
