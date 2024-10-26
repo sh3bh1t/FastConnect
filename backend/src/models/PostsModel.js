@@ -28,7 +28,7 @@ const postSchema = new mongoose.Schema({
     }, 
     active:{
         type: Boolean,
-        default : '',
+        default : true,
     },
     fileType:{
         type: String,
