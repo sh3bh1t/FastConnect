@@ -4,7 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev" : "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod" : "node app.js"
   },
   "keywords": [],
   "author": "",

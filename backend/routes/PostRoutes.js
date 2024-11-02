@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { activeCheck, createPost, deleteCommentOfUser, deletePost, getAllPost, getCommentsByPost, incrementLikes } from "../controllers/PostContoller.js";
 import multer from "multer";
-import { commentPost } from "../controllers/UserController.js";
+import { commentPost } from "../src/controllers/UserController.js";
 
 const router=Router();
 
