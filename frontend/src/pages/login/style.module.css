@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    justify-content: center;
+    height: 90svh;
+    align-items: center;
+    background: rgb(221, 227, 238);
+}
+
+.cardContainer{
+    display: flex;
+    height: 80vh;
+    box-shadow: 1rem 1rem 1.5rem rgb(173, 173,173);
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 1rem ;
+    width: 80vw;
+    background: white;
+}
+
+.cardContainer_left{
+    flex: 0.6;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cardContainer_right{
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgb(12, 12, 153);
+}
+
+.cardContainer_left_heading{
+    font-weight: bold;
+    background: rgb(12, 12, 153);
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    width: 30%;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.inputContainer{
+    margin-top: 2rem;
+
+}
+.inputRow{
+    display: flex;
+}
+
+.inputField{
+    padding: 0.8rem;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+.buttonOutlined{
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+    font-size: 1rem;
+    color: black;
+    border: 2px solid rgb(12, 12, 153);
+    padding: 0.6rem;
+    padding-inline: 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 20%;
+    background-color: rgb(240, 233, 233);
+}

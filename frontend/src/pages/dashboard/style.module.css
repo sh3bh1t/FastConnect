@@ -1,0 +1,196 @@
+.scrollComponent {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+
+
+.createPostContainer {
+    display: flex;
+    height: 20svh;
+    width: 100%;
+    padding-inline: 1rem;
+    gap: 1.3rem;
+    position: relative;
+    align-items: center;
+    background: snow;
+    border-radius: 2rem;
+}
+
+.userProfile {
+    border-radius: 100%;
+    height: 25%;
+}
+
+.createPostContainer>textarea {
+    width: 100%;
+}
+
+.Fab {
+    background: rgb(0, 59, 130);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Fab>svg {
+    width: fit-content;
+    height: 4svh;
+    color: white;
+}
+
+.textAreaOfContent {
+    width: 80%;
+    height: 70%;
+    border: 1px solid silver;
+    border-radius: 2rem;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    outline: none;
+}
+
+.uploadButton {
+    position: absolute;
+    right: 0;
+    bottom: -1rem;
+    padding: 0.6rem;
+    padding-inline: 1rem;
+    color: white;
+    border-radius: 1.5rem;
+    background: rgb(0, 59, 130);
+    cursor: pointer;
+}
+
+.postsContainer {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.singleCard {
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.singleCard_profileContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    padding-right: 3rem;
+}
+
+.singleCard_profileContainer>img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.singleCard_image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+    padding-top: 0.6rem;
+}
+
+.singleCard_image > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.optionsContainer{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    /* margin-left: 5rem; */
+    padding-block: 0.6rem;
+}
+
+.singleOption_optionsContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.singleOption_optionsContainer>svg{
+    height: 100%;
+    width: 8%;
+    cursor: pointer;
+    min-width: 1rem;
+}
+
+.commentsContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgb(0,0,0,0.7);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.allCommentsContainer{
+    /* width: 40vw; */
+    min-width: 40svw;
+    max-width: 1120px;
+    height: 80vh;
+    background: white;
+    border-radius: 1rem;
+    position: relative;
+    padding: 1.4rem;
+
+}
+
+.postCommentContainer{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+}
+
+.postCommentContainer>input{
+    flex: 0.9;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+    border: none;
+    background-color: rgb(228,228,228);
+    border-radius: 1rem;
+}
+
+.postCommentContainer_commentBtn{
+    flex: 0.1;
+    width: fit-content;
+    padding: 1.2rem;
+    background:  rgb(0, 59, 130);
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 600px){
+    .allCommentsContainer{
+        width: 90%;
+    }
+}

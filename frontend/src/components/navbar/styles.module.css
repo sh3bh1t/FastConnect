@@ -1,0 +1,35 @@
+.container {
+    padding: 1rem;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+    border-width: 100%;
+   
+}
+
+.mainLogo{
+    width: 5%;
+    cursor: pointer;
+}
+
+.navBarOptionsContainer {
+    display: flex;
+}
+
+.joinButton{
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+    font-size: 1rem;
+    color: white;
+    background: rgb(12, 12, 153);
+    padding: 0.6rem;
+    border-radius: 1rem;
+}
